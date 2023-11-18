@@ -15,8 +15,8 @@
 		9BEF62650650E1E355201566D2D48244 /* Pods-BigTechUIKit_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AF7DEB2E6E03BEF2FA25B884668A707 /* Pods-BigTechUIKit_Tests-dummy.m */; };
 		B04F9D0703525563A9446AA9D1B52728 /* Pods-BigTechUIKit_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 454BCF2FAB4B0419C24524C5B5280E9F /* Pods-BigTechUIKit_Example-dummy.m */; };
 		C50D65013C0E4E1FA679F66106F738A8 /* Pods-BigTechUIKit_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 604DC7F4DDEACE9BD15904CCA65FD666 /* Pods-BigTechUIKit_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E4B386DF6640C71AB84D4731361F8244 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37EC6FB7D14855C2FB9635EB2E3A2E2 /* ReplaceMe.swift */; };
 		F76D33AF0ABDA2E5921AB0A46FF3357D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		FC4E2BBF2B0940CC00032800 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4E2BBE2B0940CC00032800 /* ReplaceMe.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,7 +69,7 @@
 		EE512C57926F37D8FD70454A2EC6D23F /* Pods-BigTechUIKit_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BigTechUIKit_Example-frameworks.sh"; sourceTree = "<group>"; };
 		F0E9C40E52BF74E82ACDEF13B7E8248F /* BigTechUIKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BigTechUIKit-prefix.pch"; sourceTree = "<group>"; };
 		F1FC263D88CDB7FE1D7FE3CCB66191CE /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		F37EC6FB7D14855C2FB9635EB2E3A2E2 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = BigTechUIKit/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
+		FC4E2BBE2B0940CC00032800 /* ReplaceMe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = Sources/BigTechUIKit/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,7 +179,7 @@
 		BAC987FD3F3BD7CA84C809BE618CFDF2 /* BigTechUIKit */ = {
 			isa = PBXGroup;
 			children = (
-				F37EC6FB7D14855C2FB9635EB2E3A2E2 /* ReplaceMe.swift */,
+				FC4E2BBE2B0940CC00032800 /* ReplaceMe.swift */,
 				6D5A28EDF8929169A75DFD45F1502697 /* Pod */,
 				736DFCC69FD50873F263FD403BC4EF1A /* Support Files */,
 			);
@@ -317,6 +317,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1500;
 				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					CE3C66EC6531F51167E30143BE3CCFC5 = {
+						LastSwiftMigration = 1410;
+					};
+				};
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -375,8 +380,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC4E2BBF2B0940CC00032800 /* ReplaceMe.swift in Sources */,
 				8520D64403193D15F24B9E1D6D94D050 /* BigTechUIKit-dummy.m in Sources */,
-				E4B386DF6640C71AB84D4731361F8244 /* ReplaceMe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,6 +415,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C9D8711CD0400F3A43018527DC546614 /* BigTechUIKit.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -442,6 +448,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5A5A1C42D84A669F5CEBAEBEFA341175 /* BigTechUIKit.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -462,6 +469,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";

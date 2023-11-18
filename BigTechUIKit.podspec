@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '15.0'
   s.swift_version = '5.0'
 
-  s.source_files = 'BigTechUIKit/Classes/**/*'
+  s.source_files = 'Sources/BigTechUIKit/Classes/**/*'
   
   # s.resource_bundles = {
   #   'BigTechUIKit' => ['BigTechUIKit/Assets/*.png']
