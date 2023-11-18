@@ -1,0 +1,16 @@
+PODS:
+  - BigTechUIKit (0.1.0)
+
+DEPENDENCIES:
+  - BigTechUIKit (from `../`)
+
+EXTERNAL SOURCES:
+  BigTechUIKit:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  BigTechUIKit: 3dc24efa2385c04f6df909b72beb4b2049ad2b39
+
+PODFILE CHECKSUM: 8ecd5c0c619627ce76ba18565be72fe0c4e22cff
+
+COCOAPODS: 1.12.1

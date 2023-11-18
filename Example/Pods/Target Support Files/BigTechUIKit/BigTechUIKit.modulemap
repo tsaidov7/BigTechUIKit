@@ -1,0 +1,6 @@
+framework module BigTechUIKit {
+  umbrella header "BigTechUIKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

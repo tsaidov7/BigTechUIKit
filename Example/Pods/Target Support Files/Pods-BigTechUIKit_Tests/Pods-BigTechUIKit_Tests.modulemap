@@ -1,0 +1,6 @@
+framework module Pods_BigTechUIKit_Tests {
+  umbrella header "Pods-BigTechUIKit_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -22,7 +22,7 @@ pod 'BigTechUIKit'
 
 ## Author
 
-tsaidov7, t.f.saidov@tinkoff.ru
+t.f.saidov@gmail.com
 
 ## License
 

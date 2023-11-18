@@ -1,0 +1,22 @@
+{
+  "name": "BigTechUIKit",
+  "version": "0.1.0",
+  "summary": "A short description of BigTechUIKit.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/tsaidov7/BigTechUIKit",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "tsaidov7": "t.f.saidov@tinkoff.ru"
+  },
+  "source": {
+    "git": "https://github.com/tsaidov7/BigTechUIKit.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "BigTechUIKit/Classes/**/*"
+}
